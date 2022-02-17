@@ -1,0 +1,217 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"); */
+
+@font-face {
+    font-family: font-dana;
+    src: url(../CSS/font-2/dana-demibold.eot), url("../CSS/font-2/dana-demibold.otf"), url("../CSS/font-2/dana-demibold.svg"), url("../CSS/font-2/dana-demibold.svg"), url("../CSS/font-2/dana-demibold.ttf"), url("../CSS/font-2/dana-demibold.woff");
+}
+
+@font-face {
+    font-family: font-iransans;
+    src: url("../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.eot"), url("../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.otf"), url("../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.svg"), url("../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.ttf"), url("../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    background-color: #eeeeee;
+    background-color: #eee;
+}
+
+.conatiner-main-note-App {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-note-container {
+    flex: 1;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.container-my-notes {
+    width: 38em;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.heading-app {
+    padding: 0.3em 0.5em;
+    font-size: 2.5rem;
+    color: #341f97;
+    font-family: font-dana;
+}
+
+form>* {
+    margin-bottom: 5px;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 7px;
+    border: solid 1px #777;
+    border-radius: 3px;
+}
+
+#note-tittle {
+    width: 70%;
+    margin-left: 3%;
+    font-family: font-iransans;
+}
+
+textarea {
+    margin-left: 3%;
+    resize: none;
+    width: 70%;
+    height: 150px;
+    font-family: font-iransans;
+}
+
+#btn-add-note {
+    width: 70%;
+    margin-left: 3%;
+    background-color: #d35400;
+    color: #ffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: font-dana;
+}
+
+#btn-add-note:hover {
+    background-color: #341f97;
+}
+
+.containers-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1%;
+}
+
+.txt-para {
+    line-height: 40px;
+    padding-top: 0.2em;
+    font-family: font-iransans;
+}
+
+.display {
+    display: none;
+}
+
+.txt {
+    padding: 0.5em 0;
+    font-family: font-dana;
+}
+
+.note-conatiner {
+    background-color: white;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.heading-app {
+    padding-right: 0;
+}
+
+.notes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.note-tittle {
+    font-family: font-dana;
+}
+
+.note-counter {
+    font-family: font-iransans;
+}
+
+.note-text {
+    font-family: font-iransans;
+}
+
+.note-counter,
+.note-tittle,
+.note-text {
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.container-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.del-note {
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: #ff4500;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px #ff4500;
+    width: 120px;
+    font-size: 0.9em;
+    height: 40px;
+    cursor: pointer;
+    font-family: font-dana;
+}
+
+.edit-node {
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: #b1188b;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px #b1188b;
+    width: 125px;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-family: font-dana;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-my-notes {
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+    }
+    textarea {
+        width: 90%;
+        margin-right: 5%;
+    }
+    #btn-add-note {
+        width: 90%;
+        margin-right: 5%;
+    }
+    #note-tittle {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .heading-app {
+        font-size: 2rem;
+        padding: 5%;
+    }
+    .note-conatiner {
+        width: 90%;
+    }
+}
